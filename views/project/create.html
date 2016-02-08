@@ -1,0 +1,17 @@
+<div>
+    <h1>Creating of project</h1>
+
+    <form role="form" name="myForm">
+        <div class= "form-group" ng-class="{error: myForm.name.$invalid}">
+            <label>Name</label>
+            <div>
+                <input name="title" ng-model="project.name" type= "text" class= "form-control" placeholder="Название фильма" required/>
+                <span ng-show="myForm.title.$dirty && myForm.title.$invalid" class="help-inline">Name is required</span>
+            </div>
+        </div>
+        <a href="#/site/index" class="btn btn-default">Cancel</a>
+        <button ng-click="createProject(project);" 
+                ng-disabled="myForm.$invalid"
+                type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>
