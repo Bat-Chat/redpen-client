@@ -1,10 +1,10 @@
 'use strict';
 redpenApp_site.config(['$routeProvider', function($routeProvider) {
   $routeProvider
-    .when('/site/index', {
-        templateUrl: 'views/site/index.html',
-        controller: 'index'
-    })
+    // .when('/site/index', {
+    //     templateUrl: 'views/site/index.html',
+    //     controller: 'index'
+    // })
     .when('/site/about', {
         templateUrl: 'views/site/about.html',
         controller: 'about'

@@ -23,7 +23,7 @@ redpenApp_project.factory("services", ['$http','$location','$route',
     }
 
     obj.deleteProject = function(projectId){
-        return $http.delete(serviceBase + 'project/deleete/', projectId)
+        return $http.delete(serviceBase + 'project/delete/' + projectId)
         	.then(successHandler)
         	.catch(errorHandler);
 

@@ -5,6 +5,10 @@ redpenApp_project.config(['$routeProvider', function($routeProvider) {
     //     templateUrl: 'views/project/index.html',
     //     controller: 'index'
     // })
+    .when('/site/index', {
+        templateUrl: 'views/site/index.html',
+        controller: 'index'
+    })
     .when('/project/create', {
         templateUrl: 'views/project/create.html',
         controller: 'create',
